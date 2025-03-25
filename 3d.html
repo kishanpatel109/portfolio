@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #202020;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .col_30 {
+            width: 30%;
+            border: 1px solid white;
+        }
+
+        .project-card {
+            position: relative;
+            /* border-radius: 20px; */
+            overflow: hidden;
+            transition: all .3s ease;
+            max-height: 300px;
+        }
+
+        .back {
+            position: absolute;
+            bottom: -200px;
+            background-color: aqua;
+            width: 100%;
+            text-align: center;
+            transition: all .3s;
+        }
+
+        .front {
+
+            position: relative;
+        }
+
+        .project-card:hover>.back {
+            bottom: 0;
+        }
+
+
+
+        .project-card:hover>.front .slide .animate {
+            animation: animate 12s 0ms linear;
+
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .slide {
+            width: 62%;
+            position: absolute;
+            top: 26px;
+            left: 78px;
+            height: 61%;
+            overflow: hidden;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col_30">
+                    <div class="project-card">
+                        <div class="front">
+                            <div class="slide"><img class="animate" src="assets/images/Desktop - 18.png" alt=""></div>
+                            <img src="assets/images/laptop.png" alt="">
+
+                        </div>
+                        <div class="back">
+                            <div class="project_info">
+                                <h2 class="txt_cap">Web Design</h2>
+                                <p>Interior Website</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_30">
+                    <div class="project-card">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="project_info">
+                                <h2 class="txt_cap">Web Design</h2>
+                                <p>Interior Website</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_30">
+                    <div class="project-card">
+                        <div class="front"></div>
+                        <div class="back">
+                            <div class="project_info">
+                                <h2 class="txt_cap">Web Design</h2>
+                                <p>Interior Website</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
