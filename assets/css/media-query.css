@@ -1,0 +1,343 @@
+@media (min-width: 480px) {
+  .container {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .menu {
+    font-size: unset;
+  }
+
+  .buttons .button {
+    font-size: 24px;
+  }
+
+  .cv a {
+    font-size: 30px;
+  }
+
+  .social li a i {
+    font-size: 28px;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px 20px 10px;
+  }
+
+  .footer_txt p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .thanks-msg {
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .home_sec .row {
+    flex-direction: row;
+  }
+
+  .col_40 {
+    width: 50%;
+  }
+
+  .col_45 {
+    width: 45%;
+  }
+
+  .col_30 {
+    width: 45%;
+  }
+
+  .col_50 {
+    width: 50%;
+  }
+
+  .services .row {
+    justify-content: space-around;
+  }
+
+  .home_txt {
+    text-align: unset;
+  }
+
+  .about_sec .col_30,
+  .about_sec .col_45 {
+    width: 100%;
+  }
+
+  .about_photo {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .tools li {
+    width: 12.5%;
+  }
+
+  .input_box input {
+    width: 49%;
+    margin: 0 7px 8px 0;
+  }
+
+  .cv,
+  .social {
+    text-align: unset;
+  }
+
+  .all_projects a {
+    font-size: 20px;
+  }
+
+  .none {
+    display: block;
+  }
+
+  .footer_icons {
+    text-align: center;
+  }
+
+  textarea {
+    width: 98.9%;
+  }
+
+  #Logo {
+    margin: 0 auto 0 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+
+  #Logo {
+    margin: 0 auto 0 50px;
+  }
+
+  textarea {
+    width: 99%;
+  }
+
+  .font_50,
+  h2.heading {
+    font-size: 45px;
+  }
+
+  .typing_txt {
+    font-size: 34px;
+  }
+
+  .col_40 {
+    width: 40%;
+  }
+
+  .col_45 {
+    width: 45%;
+  }
+
+  .col_30 {
+    width: 30%;
+  }
+
+  .col_50 {
+    width: 50%;
+  }
+
+  .cv a,
+  .read_btn a {
+    color: #8EC5FB;
+    background-color: transparent;
+    animation: glow 0s linear 0ms infinite alternate;
+  }
+
+  .all_projects a {
+    color: #8EC5FB;
+    background-color: transparent;
+  }
+
+  .services .row {
+    justify-content: space-between;
+  }
+
+  .about_sec .col_45 {
+    width: 45%;
+  }
+
+  .about_sec .col_30 {
+    width: 30%;
+  }
+
+  .home_txt,
+  .read_btn,
+  .about_txt h2,
+  .key_skills h3 {
+    text-align: unset;
+  }
+
+  .services .row {
+    row-gap: 0;
+  }
+
+  form {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .project_info a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .back {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+
+  .ui-ux:hover .project_card .front {
+    transform: translateY(-8px);
+
+  }
+
+  .ui-ux .project_card .front {
+    transform: translateY(5px);
+    transition: all .3s;
+  }
+
+  .front {
+    border: none;
+    transform: translateY(18px);
+  }
+
+  .project_card {
+    box-shadow: 0 0 0px 1px #8EC5FB;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navbar li {
+    display: inline-block;
+  }
+
+  nav {
+    background-color: transparent;
+    flex-basis: unset;
+    flex-grow: unset;
+    height: unset;
+  }
+
+  .navbar li a {
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .read_btn a {
+    margin: 20px 0;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+
+  .social li a i {
+    margin: 0 20px 20px 0;
+  }
+
+  .about_photo {
+    width: 100%;
+    margin: 0;
+  }
+
+  i.mr_0 {
+    margin: 0;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .swiper {
+    width: 70%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+
+  .col_40 {
+    width: 40%;
+  }
+
+  .col_45 {
+    width: 45%;
+  }
+
+  .col_30 {
+    width: 30%;
+  }
+
+  .col_50 {
+    width: 50%;
+  }
+
+  .font_50,
+  h2.heading {
+    font-size: 50px;
+  }
+
+  .home_txt .font_50 {
+    font-size: 60px;
+  }
+
+  .typing_txt {
+    font-size: 40px;
+  }
+
+  .home_sec {
+    padding: 30px 0 58px 0;
+  }
+
+  .footer_icons {
+    text-align: center;
+  }
+
+  textarea {
+    width: 98.7%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1350px;
+  }
+}

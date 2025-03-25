@@ -1,0 +1,456 @@
+.filter {
+    animation: filter .5s ease-in-out;
+}
+
+@keyframes filter {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-msg {
+    color: #5B48D1;
+    font-size: 16px;
+    margin: 30px auto;
+    text-transform: capitalize;
+    width: 42%;
+    /* animation: msg 1.5s linear forwards; */
+}
+
+.thanks-svg {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@keyframes msg {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#Logo {
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+    fill: url("#MyGradient");
+    stroke: #8EC5FB;
+    stroke-miterlimit: 5;
+}
+
+.Animate-Draw {
+    fill-opacity: 0;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration: 1;
+    animation-name: DrawLine, FadeStroke, FillIn;
+    animation-duration: 4s, 1s, 1s;
+    animation-delay: 0s, 1s, 1s;
+}
+
+
+#Draw-Mark {
+    /* animation-delay: 1s, 3.5s, 3.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-T {
+    /* animation-delay: 2s, 3.5s, 3.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-K {
+    /* animation-delay: 3s, 3.5s, 3.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-hLine {
+    stroke: transparent;
+    border-color: transparent;
+    fill-opacity: 0;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration: 1;
+    animation-name: FillIn;
+    animation-duration: 1s;
+    /* animation-delay: 3.5s; */
+    /* animation-delay: 4.5s; */
+    animation-duration: 1s;
+}
+
+/* MARK is hank */
+
+#Draw-TLine {
+    /* animation-delay: 3s, 3.5s, 3.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    z-index: 2;
+}
+
+#Draw-you {
+    /* animation-delay: 4s, 4.5s, 4.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-Frame {
+    /* animation-delay: 4s, 4.5s, 4.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-exclamation1 {
+    /* animation-delay: 5s, 5.5s, 5.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-exclamation1Dot {
+    /* animation-delay: 6s, 6.5s, 6.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-exclamation2 {
+    /* animation-delay: 5s, 5.5s, 5.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-exclamation2Dot {
+    /* animation-delay: 6s, 6.5s, 6.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-exclamation3 {
+    /* animation-delay: 5s, 5.5s, 5.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+#Draw-exclamation3Dot {
+    /* animation-delay: 6s, 6.5s, 6.5s; */
+    animation-duration: 2s, 1s, 1s;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+
+@keyframes DrawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes FadeStroke {
+    to {
+        stroke-opacity: 0;
+    }
+}
+
+@keyframes FillIn {
+    from {
+        fill-opacity: 0;
+    }
+
+    to {
+        fill-opacity: 1;
+    }
+}
+
+.area {
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+}
+
+.circles {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: fixed;
+    display: block;
+    list-style: none;
+    z-index: 0;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.115);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+@keyframes slidedow {
+    0% {
+        transform: translateY(-90px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes photo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes link {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes page {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-88%);
+    }
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0px 0px 0px 0px #8EC5FB;
+    }
+
+    50% {
+        box-shadow: 1px 1px 15px 8px #8EC5FB;
+    }
+}
+
+
+@keyframes rect-glow {
+    0% {
+        filter: drop-shadow(0px 0px 0px #8EC5FB);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 15px #8EC5FB);
+    }
+}
+
+@keyframes picture {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes box {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes a-pulse {
+    0% {
+        box-shadow: 0 0 0 0 #8EC5FB;
+    }
+
+    40% {
+        box-shadow: 0 0 0 10px rgba(0, 224, 255, 0.0), 0 0 0 15px rgba(0, 224, 255, 0.35));
+    }
+
+    80% {
+        box-shadow: 0 0 0 20px rgba(0, 224, 255, 0.0),
+            0 0 0 15px rgba(0, 224, 255, 0.0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 5px rgba(0, 224, 255, 0.0), 0 0 0 0 rgba(0, 224, 255, 0.0);
+    }
+}
+
+/* change the perspective view of image */
+/* .slide {
+    transform: perspective(22cm) rotateX(1deg) rotateY(-26deg) rotateZ(1deg);
+    transform-origin: 48% 47%;
+} */
