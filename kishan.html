@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Section</title>
+
+    <!-- Google Font: Ubuntu -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset & Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(270deg, #141e30, #243b55);
+            background-size: 400% 400%;
+            animation: gradientBG 6s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .edu {
+            padding: 50px 0;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .edu h3 {
+            color: #8EC5FB;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .edu-box {
+            background: rgba(33, 32, 32, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 4px 6px 8px rgba(142, 197, 251, 0.4);
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .edu-box p {
+            color: #8EC5FB;
+            font-size: 1.3rem;
+        }
+
+        .edu-box h3 {
+            color: white;
+            margin: 15px 0;
+            font-weight: 400;
+        }
+
+        .edu-box button {
+            background-color: #8EC5FB;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .edu-box button:hover {
+            background-color: transparent;
+            border: 2px solid #8EC5FB;
+            color: #8EC5FB;
+            box-shadow: 0 0 15px rgba(142, 197, 251, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+<section class="edu">
+    <div class="container">
+        <h3>✨ My Educational Qualification ✨</h3>
+        <div class="edu-box">
+            <p>🎓 B.Com (Bachelor of Computer Applications)</p>
+            <h3>L.J University (Ahmedabad)</h3>
+            <button>Duration: 3 Years</button>
+        </div>
+        <div class="edu-box">
+            <p>🎓 MCA (Master of Computer Application)</p>
+            <h3>Silver Oak University (Ahmedabad)</h3>
+            <button>Duration: 2 Years</button>
+        </div>
+        <div class="edu-box">
+            <p>🎨 UI/UX Designer & Web Designer</p>
+            <h3>Tops Technologies (Ahmedabad)</h3>
+            <button>Duration: 7 Months</button>
+        </div>
+        <div class="edu-box">
+            <p>🎨 UI/UX Designer & Web Designer</p>
+            <h3>Fleek Media (Ahmedabad)</h3>
+            <button>Duration: 1.5 Years</button>
+        </div>
+    </div>
+</section>
+
+<!-- GSAP Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script>
+    // GSAP Animation
+    gsap.to(".edu", { opacity: 1, duration: 1, y: 0, ease: "power2.out" });
+    gsap.to(".edu-box", { opacity: 1, y: 0, duration: 1, stagger: 0.3, ease: "power3.out" });
+</script>
+
+</body>
+</html>
